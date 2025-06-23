@@ -20,7 +20,7 @@ To set up this project, follow these steps:
 3. **Install google-adk and its extensions**:
    ```bash
    pip install google-adk
-   pip install 'google-adk[extensions]'
+   pip install 'google-adk[extensions]' --use-deprecated=legacy-resolver
    ```
 
 ## Usage
