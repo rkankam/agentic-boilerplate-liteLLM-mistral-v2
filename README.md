@@ -37,6 +37,15 @@ Ensure you have the necessary environment variables set up. Create a `.env` file
 GOOGLE_GENAI_USE_VERTEXAI=0
 GOOGLE_API_KEY=your_google_api_key
 MISTRAL_API_KEY=your_mistral_api_key
+TAVILY_API_KEY=your_tavily_api_key
+MORALIS_API_KEY=your_moralis_api_key
+```
+
+## Agent Usage
+
+The agent is defined in `mistral-agent/agent.py`. It uses the Mistral model and integrates with Tavily and Moralis APIs. To run the agent, ensure the environment variables are set correctly and execute the agent script:
+```bash
+python mistral-agent/agent.py
 ```
 
 ## License
