@@ -5,13 +5,12 @@ from mcp import StdioServerParameters
 import os  
 
 
-TARGET_FOLDER_PATH = "/home/raoul/projets/agentic-boilerplate-liteLLM-mistral-copy/mistral-agent/mcp-server/tavily-mcp"
 
 toolset = MCPToolset(
     connection_params=StdioConnectionParams(
         server_params=StdioServerParameters(
             command='npx',
-            args=['tavily-mcp@latest', TARGET_FOLDER_PATH],
+            args=['tavily-mcp@latest'],
             env={"TAVILY_API_KEY": os.environ.get("TAVILY_API_KEY")}
         ),
         timeout=10.0
